@@ -1,0 +1,77 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://141.98.210.15:8501
+  External URL: http://141.98.210.15:8501
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/[0m[1mstreamlit_ui.py[0m:121 in <module>                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m118 [0m[2m# Auto refresh loop[0m                                                            [31m [0m
+[31m [0m   [2m119 [0m[94mif[0m refresh_secs [95mand[0m refresh_secs > [94m0[0m:                                          [31m [0m
+[31m [0m   [2m120 [0m[2m│   [0mtime.sleep(refresh_secs)                                                   [31m [0m
+[31m [0m [31m❱ [0m121 [2m│   [0m[1;4mst.experimental_rerun[0m()                                                    [31m [0m
+[31m [0m   [2m122 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mmodule [32m'streamlit'[0m has no attribute [32m'experimental_rerun'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/[0m[1mstreamlit_ui.py[0m:121 in <module>                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m118 [0m[2m# Auto refresh loop[0m                                                            [31m [0m
+[31m [0m   [2m119 [0m[94mif[0m refresh_secs [95mand[0m refresh_secs > [94m0[0m:                                          [31m [0m
+[31m [0m   [2m120 [0m[2m│   [0mtime.sleep(refresh_secs)                                                   [31m [0m
+[31m [0m [31m❱ [0m121 [2m│   [0m[1;4mst.experimental_rerun[0m()                                                    [31m [0m
+[31m [0m   [2m122 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mmodule [32m'streamlit'[0m has no attribute [32m'experimental_rerun'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/[0m[1mstreamlit_ui.py[0m:28 in <module>                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 25 [0m[2m│   [0mst.write([33mf[0m[33m"[0m[33m- Results: [0m[33m{[0mRESULTS_PATH[33m}[0m[33m"[0m)                                     [31m [0m
+[31m [0m   [2m 26 [0m[2m│   [0mst.markdown([33m"[0m[33m---[0m[33m"[0m)                                                         [31m [0m
+[31m [0m   [2m 27 [0m[2m│   [0m[94mif[0m st.button([33m"[0m[33mReload now[0m[33m"[0m):                                                [31m [0m
+[31m [0m [31m❱ [0m 28 [2m│   │   [0m[1;4mst.experimental_rerun[0m()                                                [31m [0m
+[31m [0m   [2m 29 [0m                                                                               [31m [0m
+[31m [0m   [2m 30 [0m[94mdef[0m[90m [0m[92mread_jsonl[0m(path, limit=[94mNone[0m):                                              [31m [0m
+[31m [0m   [2m 31 [0m[2m│   [0mevents = []                                                                [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mmodule [32m'streamlit'[0m has no attribute [32m'experimental_rerun'[0m
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mexec_code.py[0m:128 in exec_func_with_error_handling                            [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/venv/lib/python3.12/site-packages/streamlit/runtime/scrip[0m [31m [0m
+[31m [0m [2mtrunner/[0m[1mscript_runner.py[0m:669 in code_to_exec                                         [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/root/blue-psychology-test/[0m[1mstreamlit_ui.py[0m:121 in <module>                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m118 [0m[2m# Auto refresh loop[0m                                                            [31m [0m
+[31m [0m   [2m119 [0m[94mif[0m refresh_secs [95mand[0m refresh_secs > [94m0[0m:                                          [31m [0m
+[31m [0m   [2m120 [0m[2m│   [0mtime.sleep(refresh_secs)                                                   [31m [0m
+[31m [0m [31m❱ [0m121 [2m│   [0m[1;4mst.experimental_rerun[0m()                                                    [31m [0m
+[31m [0m   [2m122 [0m                                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mAttributeError: [0mmodule [32m'streamlit'[0m has no attribute [32m'experimental_rerun'[0m
+  Stopping...

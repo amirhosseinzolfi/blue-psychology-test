@@ -1,0 +1,3 @@
+{"timestamp": "2025-09-06T15:17:58.956879Z", "event": "test_initialized", "level": "INFO", "payload": {"user_name": "1", "user_age": 1, "test_name": "تست شخصیت MBTI-هوشمند", "initial_history_len": 2}}
+{"timestamp": "2025-09-06T15:18:03.146284Z", "event": "user_answer_submitted", "level": "INFO", "payload": {"user": "1", "question_index": 1, "question_text": "دوستانت برای جمعه شب به یک دورهمی دعوتت می‌کنند. واکنش اولیه‌ات چیست؟", "user_input": "kj", "attempt": 1}}
+{"timestamp": "2025-09-06T15:20:07.288587Z", "event": "streamlit_started", "level": "INFO", "payload": {"pid": 301681, "port": 8501, "log": "/root/blue-psychology-test/logs/streamlit.log"}}
