@@ -227,3 +227,7 @@ RESULT_CHUNK_PART = "<b>بخش {part_num} از {total_parts}</b>\n\n"
 QUESTION_HTML_FORMAT = "<b>✅ سوال {question_num}/{total_questions}</b>\n{question_text}"
 ACKNOWLEDGMENT_HTML_FORMAT = "<b>پاسخ شما:</b> {user_response}\n<i>{acknowledgment}</i>"
 RETRY_HTML_FORMAT = "<b>⚠️ لطفاً دوباره تلاش کنید:</b>\n{retry_message}"
+
+# Smart Chat
+SMART_CHAT_BUTTON = "💬 Smart Chat"
+SMART_CHAT_WELCOME = "Welcome to the Smart Chat! You can start chatting with the AI now."

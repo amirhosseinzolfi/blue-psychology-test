@@ -72,6 +72,16 @@ def init_db():
     )
     """)
     
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS smart_chat_history (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        chat_id INTEGER,
+        role TEXT,
+        message TEXT,
+        timestamp REAL
+    )
+    """)
+
     conn.commit()
     conn.close()
 
@@ -326,3 +336,13 @@ def get_all_users():
     conn.close()
     return list(user_map.values())
 
+def save_smart_chat_message(chat_id: int, role: str, message: str):
+    """Save a message from the smart chat to the database."""
+    conn = get_conn()
+    cur = conn.cursor()
+    cur.execute(
+        "INSERT INTO smart_chat_history (chat_id, role, message, timestamp) VALUES (?, ?, ?, ?)",
+        (chat_id, role, message, time.time())
+    )
+    conn.commit()
+    conn.close()

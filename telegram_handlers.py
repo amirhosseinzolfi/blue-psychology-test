@@ -192,7 +192,8 @@ def start(update: Update, context: CallbackContext):
     # Persistent reply keyboard
     reply_keyboard = [
         [KeyboardButton("📋 تست‌های روانشناسی"), KeyboardButton("🧠 پکیج‌های هوشمند")],
-        [KeyboardButton("🧑‍💼 پروفایل من"), KeyboardButton("💬 جلسه هوشمند درمانی با هوش مصنوعی")]
+        [KeyboardButton("🧑‍💼 پروفایل من"), KeyboardButton("💬 جلسه هوشمند درمانی با هوش مصنوعی")],
+        [KeyboardButton(ui.SMART_CHAT_BUTTON)]
     ]
     persistent_markup = ReplyKeyboardMarkup(reply_keyboard, resize_keyboard=True, one_time_keyboard=False)
 
@@ -245,6 +246,12 @@ def psychology_tests(update: Update, context: CallbackContext):
 def smart_therapy_session(update: Update, context: CallbackContext):
     """Placeholder for future smart therapy session feature"""
     send_formatted_text(update, ui.SMART_THERAPY_COMING_SOON)
+
+def start_smart_chat(update: Update, context: CallbackContext):
+    """Starts the smart chat session."""
+    cid = update.effective_chat.id
+    chat_states[cid] = {"stage": "smart_chat"}
+    send_formatted_text(update, ui.SMART_CHAT_WELCOME)
 
 # Simple callbacks
 def show_tests_cb(update: Update, context: CallbackContext):
@@ -872,7 +879,16 @@ def handle_answer(update: Update, context: CallbackContext):
     if info and info.get("stage") == "admin_reduce_amount":
         return handle_admin_reduce_input(update, context, text, info)
 
+    if info and info.get("stage") == "smart_chat":
+        from smart_chat import run_chat
+        response = run_chat(cid, text)
+        db.save_smart_chat_message(cid, "user", text)
+        db.save_smart_chat_message(cid, "ai", response)
+        update.message.reply_text(response)
+        return
+
     if not info or info["stage"] not in ["ask_name_age", "ask_user_info", "answering"]:
+        print(f"Unhandled message from user {cid}: {text}")
         return None
 
     if info["stage"] == "ask_name_age":

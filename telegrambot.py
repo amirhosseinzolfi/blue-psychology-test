@@ -317,7 +317,8 @@ def register_handlers(dp):
         ("psychology_tests", handlers.psychology_tests),
         ("my_profile", handlers.my_profile),
         ("wallet", handlers.wallet),
-        ("admin", handlers.admin_panel)
+        ("admin", handlers.admin_panel),
+        ("smart_chat", handlers.start_smart_chat)
     ]
     
     for command, handler in commands:
@@ -330,7 +331,8 @@ def register_handlers(dp):
             "🧠 پکیج‌های هوشمند": handlers.smart_packages,
             "🧑‍💼 پروفایل من": handlers.my_profile,
             "💰 کیف پول من": handlers.wallet,
-            "💬 جلسه هوشمند درمانی با هوش مصنوعی": handlers.smart_therapy_session
+            "💬 جلسه هوشمند درمانی با هوش مصنوعی": handlers.smart_therapy_session,
+            ui.SMART_CHAT_BUTTON: handlers.start_smart_chat,
         }
         
         handler = button_map.get(update.message.text)
@@ -386,6 +388,7 @@ def main():
             del sys.modules[module]
     
     logger.info("[bold green]Starting Blue Psychology Test Bot[/bold green]")
+    print("Starting Blue Psychology Test Bot")
     
     start_g4f_server()
 
@@ -395,6 +398,7 @@ def main():
     TOKEN = "8330412252:AAErsNiTYTs9bXlaMZEGIElNh0ytDO3U-Ds"
     db.init_db()
     logger.info("[bold blue]Database initialized[/bold blue]")
+    print("Database initialized")
     
     updater = Updater(TOKEN, use_context=True)
     register_handlers(updater.dispatcher)
@@ -405,10 +409,12 @@ def main():
         BotCommand("psychology_tests", "📋 نمایش تست‌های روانشناسی"),
         BotCommand("my_profile", "🕵️ مشاهده نتایج تست‌های قبلی"),
         BotCommand("wallet", "💰 کیف پول من"),
-        BotCommand("admin", "🛠️ پنل مدیریت")
+        BotCommand("admin", "🛠️ پنل مدیریت"),
+        BotCommand("smart_chat", "💬 شروع چت هوشمند")
     ])
 
     logger.info("[bold green]Bot is now running. Press Ctrl+C to stop.[/bold green]")
+    print("Bot is now running. Press Ctrl+C to stop.")
     updater.start_polling()
     updater.idle()
 

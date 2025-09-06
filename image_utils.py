@@ -1,10 +1,8 @@
 import os, time, random, logging, requests
-from g4f import Client
 from PIL import Image, ImageDraw
 
 log = logging.getLogger("image_utils")
 REQUESTS_TIMEOUT = 120
-client = Client()
 
 def save_image_from_url(url: str, prompt: str, image_num: int, folder_path: str, model: str, index: int) -> str:
     try:
@@ -41,21 +39,8 @@ def generate_image_g4f(prompt: str, index: int, folder_path: str, model: str, im
         dummy.save(fn); return fn
 
 def generate_images_for_prompt(prompt:str,index:int,folder_path:str,model:str,num_images:int,width:int,height:int,task_id=None)->list[str]:
-    images=[]
-    g4f_models=["dall-e-3","midjourney","flux","sdxl","sdxl-lora","sd-3","playground-v2.5","flux-pro","flux-dev","flux-realism","flux-anime","flux-3d","flux-4o","any-dark"]
-    use_g4f = model in g4f_models and callable(globals().get("generate_image_g4f"))
-    try:
-        if use_g4f:
-            for i in range(num_images):
-                images.append(generate_image_g4f(prompt,index,folder_path,model,i+1,width,height,task_id))
-        else:
-            for i in range(num_images):
-                seed=random.randint(1,10**6)
-                image=client.text_to_image(prompt=prompt,model=model,height=height,width=width,seed=seed)
-                os.makedirs(folder_path,exist_ok=True)
-                fn=os.path.join(folder_path, f"personality_{index}_{model}_{i+1}.jpeg")
-                image.save(fn,format="JPEG"); images.append(fn)
-        return images
-    except Exception as e:
-        log.error(f"Error generating images: {e}")
-        return images
+    """
+    Mock function for image generation.
+    """
+    print("Mocking image generation. No images will be generated.")
+    return []
