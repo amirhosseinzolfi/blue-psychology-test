@@ -18,6 +18,7 @@ def circle(surface, node):
 
     surface.context.new_sub_path()
     surface.context.arc(cx, cy, r, 0, 2 * pi)
+    surface.context.close_path()
 
 
 def ellipse(surface, node):
@@ -34,6 +35,7 @@ def ellipse(surface, node):
     surface.context.save()
     surface.context.scale(1, ratio)
     surface.context.arc(cx, cy / ratio, rx, 0, 2 * pi)
+    surface.context.close_path()
     surface.context.restore()
 
 
@@ -87,10 +89,8 @@ def rect(surface, node):
     if rx == 0 or ry == 0:
         surface.context.rectangle(x, y, width, height)
     else:
-        if rx > width / 2:
-            rx = width / 2
-        if ry > height / 2:
-            ry = height / 2
+        rx = min(rx, width / 2)
+        ry = min(ry, height / 2)
 
         # Inspired by Cairo Cookbook
         # http://cairographics.org/cookbook/roundedrectangles/

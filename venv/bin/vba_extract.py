@@ -1,4 +1,4 @@
-#!/root/blue-psychology-test/venv/bin/python3
+#!/root/blue-psychology-test/venv/bin/python
 
 ##############################################################################
 #
