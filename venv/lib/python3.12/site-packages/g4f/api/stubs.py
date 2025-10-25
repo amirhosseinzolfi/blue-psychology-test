@@ -22,6 +22,7 @@ class RequestConfig(BaseModel):
     proxy: Optional[str] = None
     conversation: Optional[dict] = None
     timeout: Optional[int] = None
+    stream_timeout: Optional[int] = None
     tool_calls: list = Field(default=[], examples=[[
 		{
 			"function": {
@@ -36,7 +37,8 @@ class RequestConfig(BaseModel):
     modalities: Optional[list[str]] = None
     audio: Optional[dict] = None
     response_format: Optional[dict] = None
-    download_media: bool = True
+    download_media: bool = False
+    raw: bool = False
     extra_body: Optional[dict] = None
 
 class ChatCompletionsConfig(RequestConfig):
