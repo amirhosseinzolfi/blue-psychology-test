@@ -1,0 +1,96 @@
+{
+  "user_id": "999004",
+  "name": "Maryam",
+  "demographics": {
+    "preferred_name": "Maryam",
+    "pronouns": "she/her",
+    "gender": "female",
+    "date_of_birth": null,
+    "languages": [
+      "Farsi"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null,
+      "timezone": null
+    }
+  },
+  "age": 26,
+  "occupation": "Graphic Designer",
+  "bio": "I am a graphic designer and I am interested in art.",
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "online_profiles": [],
+  "interests": [
+    "Art",
+    "Graphic Design"
+  ],
+  "skills": [
+    "Graphic Design"
+  ],
+  "goals_short_term": [],
+  "goals_long_term": [],
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "psychology": {
+    "big_five": {
+      "openness": 0.0,
+      "conscientiousness": 0.0,
+      "extraversion": 0.0,
+      "agreeableness": 0.0,
+      "neuroticism": 0.0
+    },
+    "mbti": null,
+    "values": [],
+    "motivations": [],
+    "stressors": [],
+    "coping_styles": [],
+    "communication_style": null,
+    "decision_style": null,
+    "emotional_tone": null,
+    "triggers": [],
+    "strengths": [],
+    "growth_areas": []
+  },
+  "behavior": {
+    "routines": [],
+    "habits": [],
+    "sleep_pattern": null,
+    "exercise": null,
+    "diet": null,
+    "hobbies": [
+      "Art"
+    ]
+  },
+  "preferences": {
+    "topics": [
+      "Art",
+      "Design"
+    ],
+    "tone": null,
+    "content_formats": [],
+    "communication_channels": [],
+    "schedule": null,
+    "boundaries": [],
+    "privacy": {}
+  },
+  "extracted_from": [
+    "text"
+  ],
+  "last_updated": "2025-11-05T19:27:01.473709",
+  "confidence": 1.0
+}

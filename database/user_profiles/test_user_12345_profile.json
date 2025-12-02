@@ -1,0 +1,39 @@
+{
+  "user_id": "test_user_12345",
+  "name": "Sarah Johnson",
+  "age": 28,
+  "occupation": "Software Engineer",
+  "interests": [
+    "coding",
+    "reading",
+    "hiking",
+    "photography",
+    "playing guitar"
+  ],
+  "contact": {
+    "email": "sarah.johnson@example.com",
+    "phone": null,
+    "address": "San Francisco"
+  },
+  "physical_attributes": {
+    "hair_color": "brown",
+    "eye_color": "blue",
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "preferences": {},
+  "bio": "Software engineer who maintains a strong work-life balance, demonstrates high self-efficacy, and enjoys hiking, photography, and playing guitar.",
+  "extracted_from": [
+    "text",
+    "audio",
+    "image_metadata"
+  ],
+  "last_updated": "2025-05-20T10:00:00Z",
+  "confidence": 0.85
+}

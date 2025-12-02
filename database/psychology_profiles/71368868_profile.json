@@ -1,0 +1,42 @@
+{
+  "name": null,
+  "age": null,
+  "gender": null,
+  "job": null,
+  "education_level": null,
+  "location": {
+    "city": null,
+    "region": null,
+    "country": null
+  },
+  "contact": {
+    "email": null,
+    "phone": null
+  },
+  "interests": [],
+  "values": [],
+  "goals": [],
+  "personality_traits": {
+    "big_five": {
+      "openness": null,
+      "conscientiousness": null,
+      "extraversion": null,
+      "agreeableness": null,
+      "neuroticism": null
+    }
+  },
+  "schema_patterns": [],
+  "communication_style": {
+    "style": null,
+    "tone_preference": null
+  },
+  "emotional_style": {
+    "baseline_mood": null,
+    "stress_tolerance": null,
+    "coping_strategies": []
+  },
+  "strengths": [],
+  "challenges": [],
+  "notes": null,
+  "last_updated": "2025-09-27T14:27:11.599189"
+}

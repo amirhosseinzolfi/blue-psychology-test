@@ -1,0 +1,50 @@
+{
+  "user_id": "jsonuserfail",
+  "core_info": {
+    "name": null,
+    "age": null,
+    "occupation": null
+  },
+  "professional_profile": {
+    "career_summary": null,
+    "skills": [],
+    "job_history": []
+  },
+  "social_profile": {
+    "relationship_status": null,
+    "relations": []
+  },
+  "lifestyle": {
+    "summary": null,
+    "routines": []
+  },
+  "personal_outlook": {
+    "interests": [],
+    "goals": [],
+    "values": []
+  },
+  "psychological_profile": {
+    "summary": null,
+    "personality_traits": {
+      "openness": null,
+      "conscientiousness": null,
+      "extraversion": null,
+      "agreeableness": null,
+      "neuroticism": null
+    },
+    "cognitive_biases": [],
+    "strengths": [],
+    "areas_for_development": []
+  },
+  "psychological_tests": [],
+  "additional_data": {
+    "note": "Analysis limited by the input containing only the generic text: 'Some text.'. No substantive profile information or test results were available for extraction."
+  },
+  "metadata": {
+    "last_updated": "2025-11-11T17:25:16.529259",
+    "confidence": 0.0,
+    "extracted_from": [
+      "text"
+    ]
+  }
+}

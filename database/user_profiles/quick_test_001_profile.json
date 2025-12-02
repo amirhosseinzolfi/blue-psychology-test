@@ -1,0 +1,31 @@
+{
+  "user_id": "quick_test_001",
+  "name": "Alex",
+  "age": 25,
+  "occupation": "data scientist",
+  "interests": [],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "preferences": {},
+  "bio": "My name is Alex and I am 25 years old. I work as a data scientist.",
+  "extracted_from": [
+    "text"
+  ],
+  "last_updated": "2025-11-05T09:50:13.726445",
+  "confidence": 1.0
+}

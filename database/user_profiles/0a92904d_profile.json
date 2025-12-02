@@ -1,0 +1,77 @@
+{
+  "user_id": "0a92904d",
+  "core_info": {
+    "name": null,
+    "age": null,
+    "occupation": null
+  },
+  "professional_profile": {
+    "career_summary": null,
+    "skills": [],
+    "job_history": []
+  },
+  "social_profile": {
+    "relationship_status": null,
+    "relations": []
+  },
+  "lifestyle": {
+    "summary": null,
+    "routines": []
+  },
+  "personal_outlook": {
+    "interests": [
+      "Intellectual curiosity",
+      "Creative concepts",
+      "Variety and novelty"
+    ],
+    "goals": [
+      "Achievement of long-term structured objectives"
+    ],
+    "values": [
+      "Order",
+      "Discipline",
+      "Reliability",
+      "Cooperation",
+      "Emotional stability"
+    ]
+  },
+  "psychological_profile": {
+    "summary": "The user presents a highly structured and intellectually innovative personality profile. Defined by exceptional conscientiousness (0.90) and high openness (0.85), this individual is likely a highly disciplined, reliable planner who simultaneously seeks out novel ideas and embraces complexity. They are emotionally stable and resilient (low neuroticism, 0.30) and are generally cooperative and compassionate (high agreeableness, 0.70). Their extraversion (0.60) is balanced, indicating social comfort without an overwhelming need for external stimulation, making them well-suited for roles requiring both independent focus and collaborative interaction.",
+    "personality_traits": {
+      "openness": 0.85,
+      "conscientiousness": 0.9,
+      "extraversion": 0.6,
+      "agreeableness": 0.7,
+      "neuroticism": 0.3
+    },
+    "cognitive_biases": [],
+    "strengths": [
+      "Exceptional discipline and self-control",
+      "High reliability and organization",
+      "Strong goal-orientation and planning ability",
+      "Intellectual curiosity and creativity",
+      "Imaginative and receptive to new ideas (high openness)",
+      "High emotional stability and resilience (low neuroticism)",
+      "Cooperative and compassionate nature"
+    ],
+    "areas_for_development": [
+      "Potential for rigidity or perfectionism due to very high conscientiousness",
+      "May need to consciously seek out extensive networking or highly dominant social roles (due to average extraversion)",
+      "Potential difficulty adapting quickly if established systems or plans are unexpectedly disrupted"
+    ]
+  },
+  "psychological_tests": [],
+  "additional_data": {
+    "test_metadata": {
+      "test_name": "Big Five Personality Test",
+      "date_taken": "2023-10-26T10:00:00"
+    }
+  },
+  "metadata": {
+    "last_updated": "2025-11-11T17:25:05.294137",
+    "confidence": 1.0,
+    "extracted_from": [
+      "text"
+    ]
+  }
+}

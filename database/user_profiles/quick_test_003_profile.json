@@ -1,0 +1,37 @@
+{
+  "user_id": "quick_test_003",
+  "name": "Test User",
+  "age": 30,
+  "occupation": "Senior Software Engineer",
+  "interests": [
+    "tech",
+    "hiking",
+    "photography"
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "preferences": {},
+  "bio": "I'm a senior software engineer with 10 years experience. I love hiking and photography.",
+  "extracted_from": [
+    "User self-statement (professional summary)",
+    "User self-statement (hobbies)",
+    "Personality Analysis/Assessment (Stress Management Focus)"
+  ],
+  "last_updated": "2025-11-05T09:50:18.341092",
+  "confidence": 0.9
+}

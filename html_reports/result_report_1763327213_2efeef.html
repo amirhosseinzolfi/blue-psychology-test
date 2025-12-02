@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+    <html lang="fa" dir="rtl">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>تست ارزیابی استرس — کاربر</title>
+    <style>@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Vazir',Tahoma,sans-serif;background:#f0f4f8;color:#1a2332;min-height:100vh}
+h1,h2,h3{font-weight:600}
+div{direction:rtl}
+a{text-decoration:none}
+figure{margin:0}
+p{line-height:1.7}
+body .page-shell{display:flex;min-height:100vh;background:linear-gradient(180deg,#dfeefb 0,#f6f8fd 40%,#fff 70%);padding:0 3vw}
+body .page-shell main{flex:1;padding:2.5rem 2rem 3rem;max-width:1200px;margin:0 auto}
+body .page-shell .hero{display:flex;flex-direction:row-reverse;gap:2rem;margin-bottom:2rem;position:relative;background:linear-gradient(135deg,#fff,#e8f4f8);border-radius:24px;padding:2rem;box-shadow:0 20px 60px rgba(15,35,65,.08)}
+.hero-visual{flex:0 0 280px;display:flex;align-items:center;justify-content:center}
+.hero-image{width:100%;max-width:280px;height:auto;border-radius:16px;box-shadow:0 12px 35px rgba(15,35,65,.15);object-fit:cover}
+.hero-card{flex:1;padding-left:1rem}
+.hero-card .eyebrow{font-size:.9rem;color:#4d6fa3;text-transform:uppercase;letter-spacing:.2em;margin-bottom:.4rem}
+.hero-card h1{font-size:2.5rem;color:#0f2141;margin-bottom:.4rem}
+.hero-card .badge{display:inline-flex;align-items:center;justify-content:center;background:#1f92c4;color:#fff;padding:.6rem 1.1rem;border-radius:999px;font-size:.85rem;margin:.4rem 0;box-shadow:0 10px 24px rgba(30,105,172,.25)}
+.hero-card .hero-text{color:#32415b;margin:1rem 0 1.2rem;font-size:1rem}
+.hero-card .meta{color:#6a7695;font-size:.9rem}
+.hero-card .hero-footer{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem;font-size:.95rem;color:#1f2a3d}
+.hero-card .stroke-button{border:1px solid rgba(30,95,143,.2);border-radius:999px;padding:.5rem 1rem;color:#1f2a3d;font-weight:600;background:transparent}
+.toc{width:240px;max-width:260px;background:rgba(255,255,255,.95);border-radius:20px 0 0 20px;padding:2rem 1.5rem 2.5rem;margin-right:auto;margin-left:0;align-self:flex-start;height:calc(100vh - 3rem);position:sticky;top:1.5rem;box-shadow:12px 12px 40px rgba(10,30,55,.12)}
+.toc-header h3{font-size:1.1rem;color:#1a3a5a;margin-bottom:.3rem;font-weight:700}
+.toc-header p{font-size:.78rem;color:#5a6a84;margin-top:0;letter-spacing:.05em;line-height:1.4}
+.toc-body{margin-top:1.2rem;display:flex;flex-direction:column;gap:.4rem}
+.toc-item{display:block;padding:.7rem 1rem;border-radius:10px;background:transparent;color:#2a3a4d;font-weight:500;transition:all .18s;font-size:.92rem;border-left:3px solid transparent}
+.toc-item:hover{color:#1a7ac4;background:rgba(26,122,196,.06);transform:translateX(-4px);border-left-color:#1a7ac4}
+.toc-empty{color:#6e7a94;font-size:.92rem;padding:.7rem 1rem;background:rgba(19,56,90,.05);border-radius:12px}
+.slider-track{width:calc(100% - 2rem);height:8px;border-radius:999px;background:linear-gradient(90deg,#2a8f5a,#4caf82);margin:-.5rem auto 1.5rem auto;position:relative;opacity:.7}
+.slider-handle{position:absolute;top:-6px;left:35%;width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid #2a8f5a;box-shadow:0 6px 15px rgba(20,50,70,.2)}
+article{background:#fff;border-radius:20px;padding:2.5rem;box-shadow:0 15px 45px rgba(10,25,45,.06);line-height:1.75}
+article h2{color:#1a2e48;font-size:1.75rem;margin:2rem 0 1rem;font-weight:700;border-bottom:2px solid #e8f0f8;padding-bottom:.5rem}
+article h3{color:#2a4060;font-size:1.3rem;margin:1.5rem 0 .6rem;font-weight:600}
+article p{color:#4b5a70;margin:1rem 0;font-size:1.05rem}
+article ul,article ol{padding-right:1.5rem;margin:1rem 0}
+article li{margin:.5rem 0;font-size:1rem;color:#3b4659}
+article code{background:#f2f4ff;color:#0f2141;padding:.2rem .5rem;border-radius:6px;font-size:.95rem}
+article pre{background:#101c33;color:#f7fbff;padding:1rem;border-radius:12px;font-size:.9rem;overflow-x:auto}
+@media(max-width:1024px){.toc{position:relative;width:100%;border-radius:32px;margin:0 0 1.5rem}}
+@media(max-width:768px){body .page-shell{flex-direction:column;align-items:center;padding:1.2rem}body .page-shell main{padding:1.5rem;max-width:100%}.hero{flex-direction:column;padding:1.5rem;gap:1.5rem}.hero-visual{flex:1;max-width:100%}.hero-image{max-width:100%}.toc{width:100%;height:auto;margin:0 0 1.5rem;padding:1.5rem;border-radius:16px}article{padding:1.8rem}}</style>
+    </head>
+    <body>
+    <div class="page-shell">
+    <aside class="toc">
+    <div class="slider-track">
+    <span class="slider-handle"></span>
+    </div>
+    <div class="toc-header">
+    <h3>📋 فهرست</h3>
+    <p>فقط عنوان‌های اصلی نمایش داده می‌شوند</p>
+    </div>
+    <div class="toc-body">
+    <a href="#۱-پروفایل-کاربری-و-یافتههای-کلیدی" class="toc-item">۱. پروفایل کاربری و یافته‌های کلیدی</a>
+<a href="#۲-بینش-روانشناختی-هستهای-و-تحلیل-اولیه" class="toc-item">۲. بینش روانشناختی هسته‌ای و تحلیل اولیه</a>
+<a href="#۳-تحلیل-عمیق-نتایج-بر-اساس-بعد-مسيولیتپذیری" class="toc-item">۳. تحلیل عمیق نتایج (بر اساس بُعد مسئولیت‌پذیری)</a>
+<a href="#۴-راهنمای-حفظ-وضعیت-مثبت-و-تقویت-مقاومت" class="toc-item">۴. راهنمای حفظ وضعیت مثبت و تقویت مقاومت</a>
+<a href="#۵-طرح-عملیاتی-برای-تقویت-انعطافپذیری-روانی-resilience-roadmap" class="toc-item">۵. طرح عملیاتی برای تقویت انعطاف‌پذیری روانی (Resilience Roadmap)</a>
+<a href="#۶-جمعبندی-و-گام-نهایی" class="toc-item">۶. جمع‌بندی و گام نهایی</a>
+    </div>
+    </aside>
+    <main>
+    <section class="hero">
+    <div class="hero-card">
+    <p class="eyebrow">خلاصه نتایج</p>
+    <h1>کاربر</h1>
+    <div class="badge">تست ارزیابی استرس</div>
+    <p class="hero-text">این نمای کلی بر اساس داده‌های شما منظم شده و چشم‌انداز آینده را با جزئیاتی روشن نشان می‌دهد.</p>
+    <div class="meta">📅 2025-11-16</div>
+    </div>
+    <div class="hero-visual">
+    
+    </div>
+    </section>
+    <article><h1 id="گزارش-تحلیل-روانشناختی-اولیه-مدیریت-استرس-و-مسيولیتها">🧠 گزارش تحلیل روانشناختی اولیه: مدیریت استرس و مسئولیت‌ها</h1>
+
+<hr />
+
+<h2 id="۱-پروفایل-کاربری-و-یافتههای-کلیدی">۱. پروفایل کاربری و یافته‌های کلیدی</h2>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">مشخصه</th>
+  <th style="text-align:left;">جزئیات</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;"><strong>نام کاربری</strong></td>
+  <td style="text-align:left;">کاربر '1'</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>ابزار ارزیابی</strong></td>
+  <td style="text-align:left;">تست ارزیابی استرس درک‌شده (بخشی)</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>یافته اصلی (سؤال ۱)</strong></td>
+  <td style="text-align:left;">احساس غرق شدن در مسئولیت‌ها: <strong>بسیار پایین (امتیاز ۰)</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>تحلیل اولیه</strong></td>
+  <td style="text-align:left;">کنترل بالا بر حجم کاری و توانایی مدیریت تعهدات</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>محدودیت تحلیل</strong></td>
+  <td style="text-align:left;">تحلیل تنها بر اساس یک بُعد از استرس انجام شده است.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="۲-بینش-روانشناختی-هستهای-و-تحلیل-اولیه">۲. بینش روانشناختی هسته‌ای و تحلیل اولیه</h2>
+
+<p><strong>کاربر '1' عزیز،</strong></p>
+
+<p>نتایج اولیه ارزیابی شما، هرچند محدود، یک شاخص بسیار قوی و مثبت را در مورد شیوه مدیریت زندگی روزمره شما نشان می‌دهد.</p>
+
+<p><strong>شما در حفظ مرزهای روانی و عملیاتی خود، عملکردی مثال‌زدنی داشته‌اید.</strong></p>
+
+<p>امتیاز صفر در سؤال مربوط به "احساس غرق شدن در مسئولیت‌ها" نشان می‌دهد که در ماه گذشته، حجم تعهدات شما (چه کاری و چه شخصی) به حدی نبوده است که احساس کنید کنترل اوضاع از دستتان خارج شده یا وظایف بیش از حد توان شما هستند. این نتیجه، نه تنها یک آمار، بلکه نشان‌دهنده <strong>مهارت‌های بالای شما در اولویت‌بندی، تفویض اختیار، یا توانایی "نه گفتن" به تعهدات اضافی</strong> است.</p>
+
+<p>این سطح از کنترل بر مسئولیت‌ها، یک منبع مهم <strong>خودکارآمدی (Self-Efficacy)</strong> است و می‌تواند به عنوان ستون فقرات مقاومت روانی شما در برابر سایر عوامل استرس‌زا عمل کند.</p>
+
+<hr />
+
+<h2 id="۳-تحلیل-عمیق-نتایج-بر-اساس-بعد-مسيولیتپذیری">۳. تحلیل عمیق نتایج (بر اساس بُعد مسئولیت‌پذیری)</h2>
+
+<h3 id="الف-مفهوم-کنترل-ادراکشده">الف. مفهوم کنترل ادراک‌شده</h3>
+
+<p>استرس درک‌شده، ارتباط مستقیمی با میزان کنترلی دارد که فرد بر اتفاقات زندگی خود احساس می‌کند. پاسخ شما به این سؤال، حاکی از آن است که شما در حوزه وظایف و تعهدات، حس بالایی از کنترل را تجربه می‌کنید.</p>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">ویژگی مثبت مرتبط با امتیاز ۰</th>
+  <th style="text-align:left;">توضیح روانشناختی</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;"><strong>تعیین مرزهای سالم</strong></td>
+  <td style="text-align:left;">شما احتمالاً در مدیریت زمان و انرژی خود هوشمندانه عمل می‌کنید و اجازه نمی‌دهید دیگران یا وظایف، بیش از حد به فضای شخصی شما تجاوز کنند.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>انعطاف‌پذیری شناختی</strong></td>
+  <td style="text-align:left;">توانایی شما در سازماندهی و ساده‌سازی وظایف، مانع از تبدیل شدن حجم کار به یک بار روانی سنگین شده است.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>سلامت ساختار زندگی</strong></td>
+  <td style="text-align:left;">نشان می‌دهد که ساختار زندگی روزمره شما (چه در کار، چه در خانه) به گونه‌ای تنظیم شده که فشار مزمن ناشی از وظایف را به حداقل می‌رساند.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ب-یاداوری-مهم-در-مورد-سایر-ابعاد-استرس">ب. یادآوری مهم در مورد سایر ابعاد استرس</h3>
+
+<p><strong>توجه داشته باشید:</strong> استرس فقط ناشی از حجم کار نیست. ما هنوز نمی‌دانیم که شما در ماه گذشته چقدر احساس نگرانی، عصبانیت، یا عدم کنترل بر اتفاقات <em>غیرقابل پیش‌بینی</em> (مانند مشکلات سلامتی، مالی یا روابط) داشته‌اید.</p>
+
+<ul>
+<li><strong>اگرچه بار مسئولیت شما کم است، اما ممکن است استرس ناشی از عدم اطمینان یا روابط، همچنان وجود داشته باشد.</strong> برای ارزیابی کامل، تکمیل تست ضروری است.</li>
+</ul>
+
+<hr />
+
+<h2 id="۴-راهنمای-حفظ-وضعیت-مثبت-و-تقویت-مقاومت">۴. راهنمای حفظ وضعیت مثبت و تقویت مقاومت</h2>
+
+<p>از آنجا که شما در حال حاضر در مدیریت بار مسئولیت‌ها موفق هستید، راهنمایی‌های ما بر «حفظ» این وضعیت مطلوب و «تقویت» مقاومت روانی در برابر سایر عوامل تمرکز دارد.</p>
+
+<h3 id="توصیههای-کاربردی-برای-کاربر-1">💡 توصیه‌های کاربردی برای کاربر '1'</h3>
+
+<ol>
+<li><p><strong>قدردانی از دستاوردها:</strong></p>
+
+<ul>
+<li><strong>بازتاب و ثبت:</strong> لحظاتی را که در ماه گذشته توانستید با موفقیت به یک تعهد «نه» بگویید یا یک وظیفه بزرگ را به بخش‌های کوچک تقسیم کنید، یادداشت کنید. این کار، مهارت‌های مقابله‌ای شما را در ذهن تقویت می‌کند.</li>
+</ul></li>
+<li><p><strong>دفاع فعال از مرزها:</strong></p>
+
+<ul>
+<li><strong>محافظت از زمان بازیابی:</strong> موفقیت در مدیریت مسئولیت‌ها نباید بهانه‌ای برای حذف زمان‌های استراحت و بازیابی (Recovery Time) شود. اطمینان حاصل کنید که زمان‌های خالی برنامه شما واقعاً صرف آرامش و علایق شخصی می‌شوند.</li>
+</ul></li>
+<li><p><strong>توجه به نمودهای فیزیکی استرس:</strong></p>
+
+<ul>
+<li><strong>بررسی بدن:</strong> استرس پنهان (Hidden Stress) می‌تواند خود را به صورت سردردهای تنشی، مشکلات گوارشی یا اختلالات خواب نشان دهد، حتی اگر ذهناً احساس غرق شدن نکنید. هر شب، قبل از خواب، یک اسکن ذهنی از وضعیت فیزیکی خود انجام دهید.</li>
+</ul></li>
+</ol>
+
+<hr />
+
+<h2 id="۵-طرح-عملیاتی-برای-تقویت-انعطافپذیری-روانی-resilience-roadmap">۵. طرح عملیاتی برای تقویت انعطاف‌پذیری روانی (Resilience Roadmap)</h2>
+
+<p>برای اطمینان از اینکه مدیریت موفقیت‌آمیز مسئولیت‌های شما به یک عادت پایدار تبدیل شود و در برابر شوک‌های احتمالی زندگی مقاوم بمانید، این طرح را دنبال کنید:</p>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">گام</th>
+  <th style="text-align:left;">تمرکز</th>
+  <th style="text-align:left;">هدف</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;"><strong>۱. شناسایی عوامل محرک</strong></td>
+  <td style="text-align:left;">پیشگیری</td>
+  <td style="text-align:left;">تعیین کنید که در چه شرایطی (مثلاً خستگی شدید، کمبود خواب، یا درخواست‌های ناگهانی) احتمال دارد مرزهای خود را زیر پا بگذارید و مسئولیت بیش از حد بپذیرید.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>۲. تمرین تنفس لنگر (Anchor Breathing)</strong></td>
+  <td style="text-align:left;">آرام‌سازی پیشگیرانه</td>
+  <td style="text-align:left;">روزانه ۳ دقیقه را به تنفس آگاهانه اختصاص دهید. این تمرین، سیستم عصبی شما را تنظیم می‌کند و آمادگی روانی شما را برای مواجهه با هر نوع استرسی بالا می‌برد.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>۳. توسعه شبکه حمایتی</strong></td>
+  <td style="text-align:left;">منابع بیرونی</td>
+  <td style="text-align:left;">اطمینان حاصل کنید که حداقل یک یا دو نفر در زندگی شما هستند که می‌توانید بدون قضاوت، درباره فشارهای روانی خود با آن‌ها صحبت کنید. این یک بافر اجتماعی قوی در برابر استرس است.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>۴. مرور هفتگی تعهدات</strong></td>
+  <td style="text-align:left;">نگهداری</td>
+  <td style="text-align:left;">هر هفته (مثلاً جمعه عصر)، برنامه‌های هفته آینده را مرور کنید و فعالانه تصمیم بگیرید که کدام تعهدات واقعاً ضروری هستند و کدام‌ها می‌توانند به تعویق بیفتند یا حذف شوند.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="۶-جمعبندی-و-گام-نهایی">۶. جمع‌بندی و گام نهایی</h2>
+
+<p>کاربر '1' عزیز، شما در مدیریت حجم وظایف خود، در مسیر درستی قرار دارید. این یک دستاورد روانشناختی مهم است که نباید نادیده گرفته شود.</p>
+
+<p>برای تکمیل تصویر سلامت روانی شما و ارائه راهکارهای دقیق‌تر در مورد مدیریت نگرانی، عصبانیت، یا احساس عدم کنترل، <strong>لطفاً ارزیابی استرس را به صورت کامل تکمیل کنید.</strong></p>
+
+<p>تکمیل تمامی سؤالات به ما اجازه می‌دهد تا نه تنها نقاط قوت شما، بلکه حوزه‌هایی که نیازمند توجه و حمایت بیشتری هستند را با دقت بیشتری شناسایی کنیم. این اطلاعات، کلید طراحی یک برنامه مدیریت استرس کاملاً شخصی‌سازی شده برای شما خواهد بود.</p>
+</article>
+    </main>
+    </div>
+    </body>
+    </html>

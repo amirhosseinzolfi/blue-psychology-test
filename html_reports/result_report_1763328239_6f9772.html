@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+    <html lang="fa" dir="rtl">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>تست ارزیابی استرس — کاربر</title>
+    <style>@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Vazir',Tahoma,sans-serif;background:#f0f4f8;color:#1a2332;min-height:100vh}
+h1,h2,h3{font-weight:600}
+div{direction:rtl}
+a{text-decoration:none}
+figure{margin:0}
+p{line-height:1.7}
+body .page-shell{display:flex;min-height:100vh;background:linear-gradient(180deg,#dfeefb 0,#f6f8fd 40%,#fff 70%);padding:0 3vw}
+body .page-shell main{flex:1;padding:2.5rem 2rem 3rem;max-width:1200px;margin:0 auto}
+body .page-shell .hero{display:flex;flex-direction:row;gap:2rem;margin-bottom:2rem;position:relative;background:linear-gradient(135deg,#fff,#e8f4f8);border-radius:24px;padding:2rem;box-shadow:0 20px 60px rgba(15,35,65,.08)}
+.hero-visual{flex:0 0 280px;display:flex;align-items:center;justify-content:center}
+.hero-image{width:100%;max-width:280px;height:auto;border-radius:16px;box-shadow:0 12px 35px rgba(15,35,65,.15);object-fit:cover}
+.hero-card{flex:1;padding-right:1rem}
+.hero-card .eyebrow{font-size:.9rem;color:#4d6fa3;text-transform:uppercase;letter-spacing:.2em;margin-bottom:.4rem}
+.hero-card h1{font-size:2.5rem;color:#0f2141;margin-bottom:.4rem}
+.hero-card .badge{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7b2cbf,#9d4edd);color:#fff;padding:.6rem 1.1rem;border-radius:999px;font-size:.85rem;margin:.4rem 0;box-shadow:0 10px 24px rgba(123,44,191,.35)}
+.hero-card .hero-text{color:#32415b;margin:1rem 0 1.2rem;font-size:1rem}
+.hero-card .meta{color:#6a7695;font-size:.9rem}
+.hero-card .hero-footer{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.4rem;font-size:.95rem;color:#1f2a3d}
+.hero-card .stroke-button{border:1px solid rgba(30,95,143,.2);border-radius:999px;padding:.5rem 1rem;color:#1f2a3d;font-weight:600;background:transparent}
+.toc{width:240px;max-width:260px;background:rgba(255,255,255,.95);border-radius:20px 0 0 20px;padding:2rem 1.5rem 2.5rem;margin-right:auto;margin-left:0;align-self:flex-start;height:calc(100vh - 3rem);position:sticky;top:1.5rem;box-shadow:12px 12px 40px rgba(10,30,55,.12)}
+.toc-header h3{font-size:1.1rem;color:#1a3a5a;margin-bottom:.3rem;font-weight:700}
+.toc-header p{font-size:.78rem;color:#5a6a84;margin-top:0;letter-spacing:.05em;line-height:1.4}
+.toc-body{margin-top:1.2rem;display:flex;flex-direction:column;gap:.4rem}
+.toc-item{display:block;padding:.7rem 1rem;border-radius:10px;background:transparent;color:#2a3a4d;font-weight:500;transition:all .18s;font-size:.92rem;border-left:3px solid transparent}
+.toc-item:hover{color:#7b2cbf;background:rgba(123,44,191,.08);transform:translateX(-4px);border-left-color:#7b2cbf}
+.toc-empty{color:#6e7a94;font-size:.92rem;padding:.7rem 1rem;background:rgba(19,56,90,.05);border-radius:12px}
+.slider-track{width:calc(100% - 2rem);height:8px;border-radius:999px;background:linear-gradient(90deg,#7b2cbf,#9d4edd);margin:-.5rem auto 1.5rem auto;position:relative;opacity:.75}
+.slider-handle{position:absolute;top:-6px;left:35%;width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid #7b2cbf;box-shadow:0 6px 15px rgba(123,44,191,.25)}
+article{background:#fff;border-radius:20px;padding:2.5rem;box-shadow:0 15px 45px rgba(10,25,45,.06);line-height:1.75}
+article h2{color:#1a2e48;font-size:1.75rem;margin:2.5rem 0 1rem;font-weight:700;border-bottom:3px solid transparent;border-image:linear-gradient(to left,#7b2cbf,#f3e5f5) 1;padding-bottom:.6rem;padding-right:.5rem;position:relative}
+article h2::before{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:6px;height:70%;background:linear-gradient(180deg,#7b2cbf,#9d4edd);border-radius:3px}
+article h3{color:#2a4060;font-size:1.3rem;margin:1.5rem 0 .6rem;font-weight:600}
+article p{color:#4b5a70;margin:1rem 0;font-size:1.05rem}
+article ul,article ol{padding-right:1.8rem;margin:1rem 0;line-height:1.8}
+article li{margin:.6rem 0;font-size:1rem;color:#3b4659;position:relative}
+article ul li::marker{color:#7b2cbf;font-size:1.1em}
+article ol li::marker{color:#7b2cbf;font-weight:700}
+article table{width:100%;border-collapse:separate;border-spacing:0;margin:1.5rem 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(15,35,65,.08)}
+article table thead{background:linear-gradient(135deg,#7b2cbf,#9d4edd);color:#fff}
+article table th{padding:1rem 1.2rem;text-align:right;font-weight:700;font-size:1rem;border-bottom:3px solid rgba(255,255,255,.2);letter-spacing:.02em}
+article table tbody tr{background:#fff;transition:all .2s ease}
+article table tbody tr:nth-child(even){background:#f8fafc}
+article table tbody tr:hover{background:linear-gradient(90deg,#f3e5f5,#e1bee7);transform:translateX(-3px);box-shadow:0 3px 12px rgba(123,44,191,.15)}
+article table td{padding:.9rem 1.2rem;text-align:right;border-bottom:1px solid #e8f0f8;color:#2a3a4d;font-size:.98rem}
+article table tbody tr:last-child td{border-bottom:none}
+article table td:first-child,article table th:first-child{border-right:4px solid #7b2cbf;font-weight:600}
+article table caption{caption-side:top;padding:1rem;font-size:1.1rem;font-weight:700;color:#1a2e48;text-align:right;background:linear-gradient(90deg,#f3e5f5,transparent);border-radius:8px 8px 0 0;margin-bottom:.5rem}
+article strong{color:#7b2cbf;font-weight:700}
+article em{color:#5a6a84;font-style:italic;font-weight:500}
+article code{background:#f2f4ff;color:#0f2141;padding:.2rem .5rem;border-radius:6px;font-size:.95rem}
+article pre{background:#101c33;color:#f7fbff;padding:1rem;border-radius:12px;font-size:.9rem;overflow-x:auto}
+article blockquote{margin:1.5rem 0;padding:1.2rem 1.5rem;background:linear-gradient(to left,#f3e5f5,#f8fafc);border-right:5px solid #7b2cbf;border-radius:0 12px 12px 0;color:#2a3a4d;font-style:italic;box-shadow:0 3px 15px rgba(123,44,191,.12)}
+article blockquote p{margin:.5rem 0;color:#2a4060}
+@media(max-width:1024px){.toc{position:relative;width:100%;border-radius:32px;margin:0 0 1.5rem}}
+@media(max-width:768px){body .page-shell{flex-direction:column;align-items:center;padding:1.2rem}body .page-shell main{padding:1.5rem;max-width:100%}.hero{flex-direction:column;padding:1.5rem;gap:1.5rem}.hero-visual{flex:1;max-width:100%}.hero-image{max-width:100%}.toc{width:100%;height:auto;margin:0 0 1.5rem;padding:1.5rem;border-radius:16px}article{padding:1.8rem}}</style>
+    </head>
+    <body>
+    <div class="page-shell">
+    <aside class="toc">
+    <div class="slider-track">
+    <span class="slider-handle"></span>
+    </div>
+    <div class="toc-header">
+    <h3>📋 فهرست</h3>
+    <p>فقط عنوان‌های اصلی نمایش داده می‌شوند</p>
+    </div>
+    <div class="toc-body">
+    <a href="#۱-پروفایل-کوتاه-و-بینش-محوری" class="toc-item">۱. پروفایل کوتاه و بینش محوری</a>
+<a href="#۲-بینش-محوری-و-تحلیل-تخصصی" class="toc-item">۲. بینش محوری و تحلیل تخصصی</a>
+<a href="#۳-تحلیل-جزيیات-تست-مدیریت-بار-مسيولیت" class="toc-item">۳. تحلیل جزئیات تست: مدیریت بار مسئولیت</a>
+<a href="#۴-راهنمایی-و-توصیههای-تخصصی-حفظ-و-گسترش-تسلط" class="toc-item">۴. راهنمایی و توصیه‌های تخصصی: حفظ و گسترش تسلط</a>
+<a href="#۵-برنامههای-ویژه-نقشه-راه-تاباوری-فعال" class="toc-item">۵. برنامه‌های ویژه: نقشه راه تاب‌آوری فعال</a>
+<a href="#۶-خلاصه-توانمندساز" class="toc-item">۶. خلاصه توانمندساز</a>
+    </div>
+    </aside>
+    <main>
+    <section class="hero">
+    <div class="hero-card">
+    <p class="eyebrow">خلاصه نتایج</p>
+    <h1>کاربر</h1>
+    <div class="badge">تست ارزیابی استرس</div>
+    <p class="hero-text">این نمای کلی بر اساس داده‌های شما منظم شده و چشم‌انداز آینده را با جزئیاتی روشن نشان می‌دهد.</p>
+    <div class="meta">📅 2025-11-16</div>
+    </div>
+    <div class="hero-visual">
+    <img src="/tmp/img_5816681487_midjourney_1.png" alt="تصویر نتیجه" class="hero-image" />
+    </div>
+    </section>
+    <article><h1 id="تحلیل-روانشناختی-اختصاصی-بر-اساس-دادههای-اولیه">تحلیل روانشناختی اختصاصی (بر اساس داده‌های اولیه)</h1>
+
+<h2 id="۱-پروفایل-کوتاه-و-بینش-محوری">۱. پروفایل کوتاه و بینش محوری</h2>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">مشخصه</th>
+  <th style="text-align:left;">جزئیات</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;"><strong>نام کاربری</strong></td>
+  <td style="text-align:left;">کاربر ۱۱</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>سن</strong></td>
+  <td style="text-align:left;">نامشخص (۰)</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>نوع ارزیابی</strong></td>
+  <td style="text-align:left;">ارزیابی استرس درک‌شده (PSS - بُعد مسئولیت)</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>یافته کلیدی</strong></td>
+  <td style="text-align:left;">احساس بار مسئولیت و وظایف بیش از حد: <strong>بسیار پایین</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>بینش محوری</strong></td>
+  <td style="text-align:left;">تسلط قوی بر سازماندهی وظایف و تعیین مرزهای مؤثر (Boundary Setting)</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="۲-بینش-محوری-و-تحلیل-تخصصی">۲. بینش محوری و تحلیل تخصصی</h2>
+
+<h3 id="کاربر-۱۱-سنگ-بنای-مقاومت-روانی-شما">کاربر ۱۱: سنگ بنای مقاومت روانی شما</h3>
+
+<p>تحلیل پاسخ شما، حتی با وجود محدودیت داده‌ها، یک نقطه قوت روانشناختی بسیار مهم را آشکار می‌سازد. در دنیای پرفشار امروز، توانایی مدیریت حجم کار و احساس نکردن غرق شدن در مسئولیت‌ها، یک مزیت رقابتی و یک <strong>عامل محافظت‌کننده</strong> حیاتی در برابر فرسودگی شغلی (Burnout) است.</p>
+
+<p><strong>بینش اصلی:</strong>
+شما در بُعد <strong>کنترل محیط و سازماندهی وظایف</strong>، سطحی از تسلط را نشان می‌دهید که به ندرت در افراد تحت استرس مشاهده می‌شود. این امر به این معناست که شما احتمالاً در فیلتر کردن وظایف غیرضروری، واگذاری مسئولیت‌ها، یا تعیین مرزهای زمانی قاطع، بسیار کارآمد عمل می‌کنید. این مهارت، نه تنها استرس را کاهش می‌دهد، بلکه انرژی ذهنی شما را برای تمرکز بر چالش‌های پیچیده‌تر آزاد می‌سازد.</p>
+
+<hr />
+
+<h2 id="۳-تحلیل-جزيیات-تست-مدیریت-بار-مسيولیت">۳. تحلیل جزئیات تست: مدیریت بار مسئولیت</h2>
+
+<p>بر اساس تنها داده موجود، تمرکز ما بر نحوه درک شما از فشار وظایف است.</p>
+
+<h3 id="الف-تفسیر-امتیاز-۰-از-۳">الف. تفسیر امتیاز (۰ از ۳)</h3>
+
+<p>امتیاز صفر شما در این بُعد نشان‌دهنده یک سازگاری موفقیت‌آمیز است. این وضعیت نشان می‌دهد که شما:</p>
+
+<ol>
+<li><strong>فعالانه عمل می‌کنید، نه واکنشی:</strong> شما منتظر نمی‌مانید تا مسئولیت‌ها شما را تحت فشار قرار دهند؛ بلکه پیش از آن، با برنامه‌ریزی یا تنظیم مرزها، کنترل را در دست می‌گیرید.</li>
+<li><strong>درک واقع‌بینانه از ظرفیت:</strong> شما به خوبی ظرفیت‌های خود را می‌شناسید و از پذیرش بیش از حد وظایفی که می‌دانید خارج از توان شماست، اجتناب می‌کنید.</li>
+<li><strong>قدرت نه گفتن:</strong> احتمالاً شما از مهارت‌های قاطعیت (Assertiveness) بالایی برخوردارید و می‌توانید در مواقع لزوم، بدون احساس گناه، "نه" بگویید.</li>
+</ol>
+
+<h3 id="ب-پیامد-روانی-این-نقطه-قوت">ب. پیامد روانی این نقطه قوت</h3>
+
+<p>این توانایی، تأثیر مستقیمی بر سلامت روان شما دارد:</p>
+
+<ul>
+<li><strong>کاهش اضطراب عملکرد:</strong> چون احساس می‌کنید کنترل امور را در دست دارید، اضطراب ناشی از عقب ماندن یا شکست در انجام وظایف به شدت کاهش می‌یابد.</li>
+<li><strong>افزایش خودکارآمدی:</strong> هر بار که با موفقیت حجم کار را مدیریت می‌کنید، حس خودکارآمدی (Self-Efficacy) شما تقویت می‌شود که یک سپر دفاعی قوی در برابر استرس‌های آتی است.</li>
+</ul>
+
+<hr />
+
+<h2 id="۴-راهنمایی-و-توصیههای-تخصصی-حفظ-و-گسترش-تسلط">۴. راهنمایی و توصیه‌های تخصصی: حفظ و گسترش تسلط</h2>
+
+<p>از آنجا که شما در مدیریت بار مسئولیت موفق هستید، توصیه‌ها بر حفظ این تعادل و گسترش این مهارت به حوزه‌هایی متمرکز است که ممکن است به طور غیرمستقیم استرس‌زا باشند.</p>
+
+<h3 id="۱-حفظ-مرزهای-روانی-mental-boundaries">۱. حفظ مرزهای روانی (Mental Boundaries) 🛡️</h3>
+
+<ul>
+<li><strong>چالش:</strong> گاهی اوقات، افرادی که در مدیریت وظایف بیرونی قوی هستند، مرزهای ضعیفی در برابر "فکرهای مزاحم" یا "نگرانی‌های ذهنی" دارند.</li>
+<li><strong>توصیه:</strong> همان‌طور که برای کارتان زمان تعیین می‌کنید، برای نگرانی‌هایتان نیز زمان تعیین کنید (Worry Time). برای مثال، هر روز ۱۵ دقیقه را به فکر کردن درباره مسائل حل‌نشده اختصاص دهید و پس از آن، آگاهانه ذهن خود را به فعالیت‌های دیگر هدایت کنید.</li>
+</ul>
+
+<h3 id="۲-ارزیابی-دورهای-تعادل-کار-و-زندگی-work-life-balance">۲. ارزیابی دوره‌ای تعادل کار و زندگی (Work-Life Balance) ⚖️</h3>
+
+<ul>
+<li><strong>چالش:</strong> موفقیت در مدیریت وظایف می‌تواند وسوسه ایجاد کند که وظایف بیشتری بپذیرید.</li>
+<li><strong>توصیه:</strong> هر ماه یک بار، زمان صرف شده برای کار در مقابل زمان صرف شده برای استراحت، روابط و فعالیت‌های لذت‌بخش را ارزیابی کنید. مطمئن شوید که "هرگز احساس غرق شدن نکردن" به معنای "همیشه کار کردن" نیست.</li>
+</ul>
+
+<h3 id="۳-استفاده-از-مهارت-برای-حمایت-اجتماعی">۳. استفاده از مهارت برای حمایت اجتماعی 🤝</h3>
+
+<ul>
+<li><strong>چالش:</strong> دیگران ممکن است از شما درخواست کمک یا راهنمایی در مدیریت وظایف خود داشته باشند.</li>
+<li><strong>توصیه:</strong> از مهارت‌های خود در سازماندهی به عنوان یک منبع اجتماعی استفاده کنید. راهنمایی کردن دیگران (Mentoring) نه تنها به آن‌ها کمک می‌کند، بلکه درک شما از مکانیسم‌های مدیریت استرس را عمیق‌تر می‌سازد.</li>
+</ul>
+
+<hr />
+
+<h2 id="۵-برنامههای-ویژه-نقشه-راه-تاباوری-فعال">۵. برنامه‌های ویژه: نقشه راه تاب‌آوری فعال</h2>
+
+<p>شما در مدیریت استرس واکنشی (آنچه که اکنون اتفاق افتاده) قوی هستید. برنامه زیر بر تاب‌آوری فعال (Proactive Resilience) تمرکز دارد تا این نقطه قوت را به یک سیستم دائمی تبدیل کند.</p>
+
+<h3 id="نقشه-راه-۳-مرحلهای-برای-تقویت-تسلط">نقشه راه ۳ مرحله‌ای برای تقویت تسلط</h3>
+
+<table>
+<thead>
+<tr>
+  <th style="text-align:left;">مرحله</th>
+  <th style="text-align:left;">هدف</th>
+  <th style="text-align:left;">اقدام عملی اختصاصی برای شما</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left;"><strong>۱. تثبیت روتین (حفظ کنترل)</strong></td>
+  <td style="text-align:left;">جلوگیری از بازگشت احساس غرق شدن</td>
+  <td style="text-align:left;"><strong>"زمان‌بندی ممنوعه":</strong> حداقل ۲ ساعت در روز (ترجیحاً عصرها) را به عنوان "زمان ممنوعه کاری" اعلام کنید. این زمان باید به طور قاطع به استراحت، فعالیت بدنی یا ارتباطات اختصاص یابد.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>۲. شناسایی نقاط ضعف پنهان</strong></td>
+  <td style="text-align:left;">سنجش سایر ابعاد استرس</td>
+  <td style="text-align:left;"><strong>تکمیل تست کامل:</strong> برای اطمینان از اینکه این سازگاری قوی در بُعد وظایف، سایر ابعاد استرس (مانند نگرانی‌های آینده یا فشارهای عاطفی) را پوشش نداده باشد، تست ارزیابی استرس را به طور کامل تکمیل کنید.</td>
+</tr>
+<tr>
+  <td style="text-align:left;"><strong>۳. تقویت ساختار حمایتی</strong></td>
+  <td style="text-align:left;">تضمین منابع درازمدت</td>
+  <td style="text-align:left;"><strong>"ممیزی منابع":</strong> فهرستی از منابعی که به شما کمک می‌کنند احساس غرق شدن نکنید (مانند همکاران حامی، ابزارهای برنامه‌ریزی، یا زمان استراحت) تهیه کنید. اطمینان حاصل کنید که این منابع در دسترس و پایدار باقی بمانند.</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2 id="۶-خلاصه-توانمندساز">۶. خلاصه توانمندساز</h2>
+
+<p>کاربر گرامی ۱۱، شما در مدیریت حجم کار و مسئولیت‌ها، یک الگو هستید. این توانایی یک سرمایه روانشناختی ارزشمند است. شما به جای اینکه اجازه دهید وظایف شما را کنترل کنند، آن‌ها را سازماندهی می‌کنید.</p>
+
+<p><strong>نکته پایانی:</strong> روانشناس بر این باور است که ارزیابی جامع نیازمند داده‌های کامل است. از شما دعوت می‌شود تا با تکمیل تمامی سؤالات آزمون، به ما کمک کنید تا تصویری کامل‌تر و دقیق‌تر از نحوه مقابله شما با طیف وسیعی از عوامل استرس‌زا به دست آوریم و توصیه‌های خود را متناسب با کل ساختار روانی شما تنظیم کنیم.</p>
+
+<p><strong>این نقطه قوت را جشن بگیرید و از آن برای ساختن یک زندگی متعادل‌تر استفاده کنید.</strong> ✨</p>
+</article>
+    </main>
+    </div>
+    </body>
+    </html>

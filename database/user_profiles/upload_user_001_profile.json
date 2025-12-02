@@ -1,0 +1,52 @@
+{
+  "user_id": "upload_user_001",
+  "core_info": {
+    "name": "Alice Brown",
+    "age": 31,
+    "occupation": "Data Analyst"
+  },
+  "professional_profile": {
+    "career_summary": "Works with data",
+    "skills": [
+      "python"
+    ],
+    "job_history": []
+  },
+  "social_profile": {
+    "relationship_status": null,
+    "relations": []
+  },
+  "lifestyle": {
+    "summary": null,
+    "routines": []
+  },
+  "personal_outlook": {
+    "interests": [
+      "running"
+    ],
+    "goals": [],
+    "values": []
+  },
+  "psychological_profile": {
+    "summary": null,
+    "personality_traits": {
+      "openness": null,
+      "conscientiousness": null,
+      "extraversion": null,
+      "agreeableness": null,
+      "neuroticism": null
+    },
+    "cognitive_biases": [],
+    "strengths": [],
+    "areas_for_development": []
+  },
+  "psychological_tests": [],
+  "additional_data": {},
+  "metadata": {
+    "last_updated": "2025-01-01T00:00:00",
+    "confidence": 0.65,
+    "extracted_from": [
+      "text"
+    ]
+  }
+}

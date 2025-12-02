@@ -1,0 +1,45 @@
+{
+  "user_id": "image_user_111",
+  "name": null,
+  "age": null,
+  "occupation": "Corporate Trainer; HR Consultant; Organizational Development Specialist",
+  "interests": [
+    "personality assessment",
+    "psychology",
+    "team collaboration",
+    "training and development",
+    "cognitive science",
+    "psychometrics",
+    "organizational development",
+    "leadership training",
+    "workshop facilitation",
+    "human resources management"
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "preferences": {
+    "learning_style": "Structured methodologies; Workshop-based learning",
+    "work_environment": "Collaborative environments; Data-driven decision making"
+  },
+  "bio": "An illustration depicting personality assessment and teamwork, featuring a cartoon brain figure (partially a puzzle) with glasses overseeing two individuals working on laptops. The image includes the acronyms 'MBTI' (Myers-Briggs Type Indicator) and 'MTC', suggesting a focus on corporate training, psychology, or cognitive understanding.",
+  "extracted_from": [
+    "image"
+  ],
+  "last_updated": "2024-05-27T17:48:07.124567",
+  "confidence": 0.85
+}

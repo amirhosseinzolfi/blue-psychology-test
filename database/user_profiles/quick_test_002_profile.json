@@ -1,0 +1,39 @@
+{
+  "user_id": "quick_test_002",
+  "name": null,
+  "age": null,
+  "occupation": "Personality Assessment Consultant / Trainer",
+  "interests": [
+    "Personality assessment",
+    "MBTI",
+    "Team building",
+    "Psychometrics",
+    "Consulting",
+    "Training"
+  ],
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "preferences": {},
+  "bio": "An illustration depicting a service or training focused on understanding personality types, team collaboration, and cognitive styles. Key concepts referenced are MBTI (Myers-Briggs Type Indicator) and MTC (Mind Type Consulting or similar related framework).",
+  "extracted_from": [
+    "image",
+    "text"
+  ],
+  "last_updated": "2025-11-05T09:50:18.315839",
+  "confidence": 0.9
+}

@@ -1,0 +1,46 @@
+{
+  "user_id": "999001",
+  "core_info": {
+    "name": null,
+    "age": null,
+    "occupation": null
+  },
+  "professional_profile": {
+    "career_summary": null,
+    "skills": [],
+    "job_history": []
+  },
+  "social_profile": {
+    "relationship_status": null,
+    "relations": []
+  },
+  "lifestyle": {
+    "summary": null,
+    "routines": []
+  },
+  "personal_outlook": {
+    "interests": [],
+    "goals": [],
+    "values": []
+  },
+  "psychological_profile": {
+    "summary": null,
+    "personality_traits": {
+      "openness": null,
+      "conscientiousness": null,
+      "extraversion": null,
+      "agreeableness": null,
+      "neuroticism": null
+    },
+    "cognitive_biases": [],
+    "strengths": [],
+    "areas_for_development": []
+  },
+  "psychological_tests": [],
+  "additional_data": {},
+  "metadata": {
+    "last_updated": "2025-11-06T00:03:57.111346",
+    "confidence": 0.8,
+    "extracted_from": []
+  }
+}

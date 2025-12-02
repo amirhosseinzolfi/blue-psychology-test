@@ -1,0 +1,53 @@
+{
+  "user_id": "f1a56d9f",
+  "core_info": {
+    "name": "Jane",
+    "age": null,
+    "occupation": "Data Scientist"
+  },
+  "professional_profile": {
+    "career_summary": "Currently employed as a Data Scientist, indicating expertise in complex data analysis, statistical modeling, and technical problem-solving.",
+    "skills": [
+      "Data Science",
+      "Statistical Modeling",
+      "Quantitative Analysis",
+      "Programming"
+    ],
+    "job_history": []
+  },
+  "social_profile": {
+    "relationship_status": null,
+    "relations": []
+  },
+  "lifestyle": {
+    "summary": "Specific lifestyle details are unknown, but the occupation suggests a routine involving detailed, desk-based, and intellectually demanding work.",
+    "routines": []
+  },
+  "personal_outlook": {
+    "interests": [],
+    "goals": [],
+    "values": []
+  },
+  "psychological_profile": {
+    "summary": null,
+    "personality_traits": {
+      "openness": null,
+      "conscientiousness": null,
+      "extraversion": null,
+      "agreeableness": null,
+      "neuroticism": null
+    },
+    "cognitive_biases": [],
+    "strengths": [],
+    "areas_for_development": []
+  },
+  "psychological_tests": [],
+  "additional_data": {},
+  "metadata": {
+    "last_updated": "2025-11-11T17:24:57.038075",
+    "confidence": 0.3,
+    "extracted_from": [
+      "text"
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "user_id": "999005",
+  "name": "\u0627\u062d\u0645\u062f",
+  "demographics": {
+    "preferred_name": null,
+    "pronouns": null,
+    "gender": null,
+    "date_of_birth": null,
+    "languages": [
+      "Persian"
+    ],
+    "location": {
+      "city": null,
+      "region": null,
+      "country": null,
+      "timezone": null
+    }
+  },
+  "age": 35,
+  "occupation": "\u067e\u0632\u0634\u06a9",
+  "bio": "35 \u0633\u0627\u0644\u0647. \u067e\u0632\u0634\u06a9.",
+  "contact": {
+    "email": null,
+    "phone": null,
+    "address": null
+  },
+  "online_profiles": [],
+  "interests": [],
+  "skills": [],
+  "goals_short_term": [],
+  "goals_long_term": [],
+  "physical_attributes": {
+    "hair_color": null,
+    "eye_color": null,
+    "height": null,
+    "build": null
+  },
+  "voice_profile": {
+    "accent": null,
+    "pitch": null,
+    "pace": null,
+    "tone": null
+  },
+  "psychology": {
+    "big_five": {
+      "openness": 0.0,
+      "conscientiousness": 0.0,
+      "extraversion": 0.0,
+      "agreeableness": 0.0,
+      "neuroticism": 0.0
+    },
+    "mbti": null,
+    "values": [],
+    "motivations": [],
+    "stressors": [],
+    "coping_styles": [],
+    "communication_style": null,
+    "decision_style": null,
+    "emotional_tone": null,
+    "triggers": [],
+    "strengths": [],
+    "growth_areas": []
+  },
+  "behavior": {
+    "routines": [],
+    "habits": [],
+    "sleep_pattern": null,
+    "exercise": null,
+    "diet": null,
+    "hobbies": []
+  },
+  "preferences": {
+    "topics": [],
+    "tone": null,
+    "content_formats": [],
+    "communication_channels": [],
+    "schedule": null,
+    "boundaries": [],
+    "privacy": {}
+  },
+  "extracted_from": [
+    "text"
+  ],
+  "last_updated": "2025-11-05T19:27:05.004907",
+  "confidence": 1.0
+}
